@@ -12,7 +12,7 @@
 [![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)](#)
 [![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](#)
 
-[Live Demo](https://chauhanprashant07.netlify.app) • [GitHub Profile](https://github.com/chauhanprashant07)
+[Live Demo](https://prashantchauhan.vercel.app) • [GitHub Profile](https://github.com/chauhanprashant07)
 
 </div>
 
