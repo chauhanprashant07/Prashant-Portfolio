@@ -105,6 +105,12 @@
   opacity: 0;
 }
 
+@media screen and (max-width: 1024px) {
+  .character-rim {
+    display: none;
+  }
+}
+
 .character-model {
   height: 80%;
   height: 80vh;
@@ -249,17 +255,19 @@ h2.landing-info-h2 {
   top: 0;
 }
 
-.landing-info-h2::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 120%;
-  z-index: 3;
-  background-image: linear-gradient(0deg,
-      var(--backgroundColor) 40%,
-      rgba(0, 0, 0, 0) 110%);
-  top: 0;
-  left: 0;
+@media screen and (min-width: 1025px) {
+  .landing-info-h2::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    z-index: 3;
+    background-image: linear-gradient(0deg,
+        var(--backgroundColor) 40%,
+        rgba(0, 0, 0, 0) 110%);
+    top: 0;
+    left: 0;
+  }
 }
 
 @media screen and (min-width: 500px) {
@@ -324,15 +332,16 @@ h2.landing-info-h2 {
 
 @media screen and (max-width: 1024px) {
   .character-model {
-    position: relative; /* Change from absolute to relative on mobile */
-    height: 60vh; /* Reduce height */
-    bottom: auto;
+    position: absolute;
+    height: 70vh;
+    bottom: 0;
+    top: auto;
     z-index: 1;
   }
 
   .character-model::before,
   .character-model::after {
-    display: none; /* Hide the pseudo-elements on mobile to prevent overlapping */
+    display: none;
   }
 }
 

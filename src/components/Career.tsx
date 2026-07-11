@@ -16,12 +16,14 @@ const Career = () => {
             <div className="career-info-in">
               <div className="career-role">
                 <h4>B.Tech Computer Science</h4>
-                <h5>ABES Engineering College</h5>
+                <h5>AKTU University</h5>
               </div>
-              <h3>2025–2029</h3>
+              <h3>2023–2027</h3>
             </div>
             <p>
-              Pursuing Bachelor of Technology in Computer Science Engineering with CGPA 8.2 (1st Year).
+             • Academic Performance: Maintained a strong CGPA of 8.2 in the 1st year.
+             • Core Focus: Deepening knowledge in Computer Science with an active interest in Cybersecurity foundations and Artificial Intelligence.
+             • Learning & Growth: Exploring how AI can be leveraged for threat detection and building secure, efficient applications.
             </p>
           </div>
           <div className="career-info-box">
@@ -35,7 +37,7 @@ const Career = () => {
             <p>
               • Solved 300+ problems on LeetCode<br/>
               • 500+ contributions on GitHub<br/>
-              • Participated in Smart India Hackathon 2024<br/>
+              • Participated in Smart India Hackathon 2026<br/>
               • Active Open-Source Contributor<br/>
               • Secured Top 10 in College Coding Competition
             </p>

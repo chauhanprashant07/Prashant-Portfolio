@@ -7,6 +7,7 @@
   opacity: 1;
   height: auto;
   width: var(--cWidth);
+  max-width: var(--cMaxWidth);
   margin: auto;
 }
 .about-me {
@@ -67,5 +68,21 @@
   .about-me p {
     font-size: 2.5rem;
     line-height: 2.7rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .about-me {
+    padding: 30px 0;
+  }
+  
+  .about-me h3 {
+    font-size: 18px;
+    letter-spacing: 4px;
+  }
+  
+  .about-me p {
+    font-size: 24px;
+    line-height: 28px;
   }
 }

@@ -45,6 +45,9 @@ export function setCharTimeline(
         if (child.material.name === "Material.018") {
           monitor = child;
           child.material.color.set("#FFFFFF");
+          if (window.innerWidth <= 1024) {
+            child.material.opacity = 0;
+          }
         }
       });
     }
@@ -52,12 +55,17 @@ export function setCharTimeline(
       object.material.transparent = true;
       object.material.opacity = 0;
       object.material.emissive.set("#B0F5EA");
-      gsap.timeline({ repeat: -1, repeatRefresh: true }).to(object.material, {
-        emissiveIntensity: () => intensity * 8,
-        duration: () => Math.random() * 0.6,
-        delay: () => Math.random() * 0.1,
-      });
+      if (window.innerWidth > 1024) {
+        gsap.timeline({ repeat: -1, repeatRefresh: true }).to(object.material, {
+          emissiveIntensity: () => intensity * 8,
+          duration: () => Math.random() * 0.6,
+          delay: () => Math.random() * 0.1,
+        });
+      }
       screenLight = object;
+      if (window.innerWidth <= 1024) {
+        object.material.opacity = 0;
+      }
     }
   });
   let neckBone = character?.getObjectByName("spine005");

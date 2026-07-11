@@ -19,6 +19,8 @@
 
 .work-container {
   margin: auto;
+  width: var(--cWidth);
+  max-width: var(--cMaxWidth);
 }
 
 /* ── Carousel ── */
@@ -260,17 +262,7 @@
   }
 }
 
-@media only screen and (max-width: 1600px) {
-  .carousel-nav-buttons .carousel-arrow-left {
-    left: -60px;
-  }
-
-  .carousel-nav-buttons .carousel-arrow-right {
-    right: -60px;
-  }
-}
-
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1400px) and (min-width: 1025px) {
   .work-section h2 {
     font-size: 50px;
   }
@@ -285,14 +277,6 @@
 
   .carousel-content {
     gap: 40px;
-  }
-
-  .carousel-nav-buttons .carousel-arrow-left {
-    left: 10px;
-  }
-
-  .carousel-nav-buttons .carousel-arrow-right {
-    right: 10px;
   }
 }
 
@@ -345,6 +329,15 @@
     justify-content: center;
     gap: 20px;
     pointer-events: auto;
+    order: 2; /* Ensure arrows come after track container */
+  }
+
+  .carousel-track-container {
+    order: 1;
+  }
+
+  .carousel-dots {
+    order: 3;
   }
 }
 
