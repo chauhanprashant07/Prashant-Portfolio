@@ -38,11 +38,13 @@
 
 .carousel-track {
   display: flex;
+  flex-wrap: nowrap; /* Important: No wrapping! */
   transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   will-change: transform;
 }
 
 .carousel-slide {
+  width: 100%;
   min-width: 100%;
   flex-shrink: 0;
   box-sizing: border-box;

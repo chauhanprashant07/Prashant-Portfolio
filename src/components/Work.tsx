@@ -8,14 +8,14 @@ const projects = [
     title: "3D Portfolio",
     category: "Full Stack Interactive Portfolio",
     tools: "React, Three.js, Tailwind CSS, Framer Motion",
-    image: "/images/placeholder.webp",
+    image: "/images/bond.png",
     link: "https://chauhanprashant07.netlify.app",
   },
   {
     title: "Cybersecurity Tools",
     category: "Security & Scanning Tools",
     tools: "Python, Socket Programming, Requests",
-    image: "/images/placeholder.webp",
+    image: "/images/broki.png",
     link: "https://github.com/chauhanprashant07",
   },
   {
